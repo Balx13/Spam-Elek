@@ -1,5 +1,8 @@
 # Spam-Elek
-Egy magyar nyelvű Discord bot, ami mindenféle vicces spam-eket küld!
+### Egy magyar nyelvű Discord bot, ami mindenféle vicces spam-eket küld!
+
+Az üzenetetk küldése random időnként(10 perc-1 óra) történik, vagy ha valaki megjelöli a botot egy üzenetbe( @<bot_neve> )
+
 > Megjegyzés: Ez a bot hobbiból készült, és nem tervezem frissíteni a jövőben
 
 Minták a "spam"-ekből:
@@ -8,7 +11,7 @@ Minták a "spam"-ekből:
 - "Figyelem! Képzeletbeli ninja támadás!"
 - "Random spam, de legalább barátságos spam!"
 
-## Ha új üzeneteket szeretnél hozzáadni, csak add hozzá a  "messages" listához!
+#### Ha új üzeneteket szeretnél hozzáadni, csak add hozzá a  "messages" listához!
 
 # Használat
 1. Klónozd ezt a repót, vagy töltsd le a **main.py** fáljt!
