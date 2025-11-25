@@ -1,7 +1,7 @@
 # Spam-Elek
 ### Egy magyar nyelvű Discord bot, ami mindenféle vicces spam-eket küld!
 
-Az üzenetetk küldése random időnként(10 perc-1 óra) történik, vagy ha valaki megjelöli a botot egy üzenetbem( @<bot_neve> ) \
+Az üzenetetk küldése random időnként(10 perc-1 óra) történik, vagy ha valaki megjelöli a botot egy üzenetben ( @<bot_neve> ) \
 A botnak megadott tokennek kell rendelkeznie üzenet írási és üzenet olvasási jogokkal is!
 > Megjegyzés: Ez a bot hobbiból készült, és nem tervezem frissíteni a jövőben
 
