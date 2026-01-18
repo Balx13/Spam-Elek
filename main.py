@@ -3,13 +3,14 @@
 import discord
 import asyncio
 import random
+import os
 
-TOKEN = ' ' ##### API Token
+TOKEN = os.getenv("BOT_TOKEN")
+if not TOKEN:
+    raise RuntimeError("BOT_TOKEN nincs beállítva!")
 
 intents = discord.Intents.default()
 intents.message_content = True
-
-intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
 # A hülye üzenetek listája
@@ -71,8 +72,11 @@ messages = [
 
 async def send_random_messages():
     await client.wait_until_ready()
-    channel_n = 0 ##### A csatorna ID-ja
-    channel = client.get_channel(channel_n)
+    cannel_id = os.getenv("CHANNEL_ID")
+    if not channel_id:
+        raise RuntimeError("CHANNEL_ID nincs beállítva!")
+    channel_id = int(channel_id)
+    channel = client.get_channel(channel_id)
     while not client.is_closed():
         await asyncio.sleep(random.randint(1200, 3600))
         await channel.send(random.choice(messages))
@@ -96,4 +100,5 @@ while True:
     try:
         client.run(TOKEN)
     except:
+
         continue
